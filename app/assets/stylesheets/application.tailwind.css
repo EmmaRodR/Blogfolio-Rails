@@ -1,0 +1,365 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px #1a344663 inset !important; /* Fondo oscuro */
+}
+
+@layer base {
+
+/* 🌱 Fondo General */
+body:not(.dark) {
+  @apply bg-[#F4ECE1] text-[#3B2F2F] transition-colors duration-500;
+}
+
+/* 🎨 Hero Section */
+body:not(.dark) .hero-text {
+  @apply bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#A0522D] to-[#6B4226] text-transparent;
+}
+
+body:not(.dark) .hero-title {
+  @apply font-extrabold text-[#5A3E2B];
+}
+
+body:not(.dark) .hero-background {
+  @apply bg-gradient-to-br from-[#E8D3C1] to-[#C3A38A];
+}
+
+/* 🏷️ Job Title */
+body:not(.dark) .job-title {
+  @apply text-[#6E442B];
+}
+
+/* 📌 Footer */
+body:not(.dark) .footer-background {
+  @apply bg-[#C9B29B];
+}
+
+/* 🎭 Toggle Background */
+body:not(.dark) .toogle-background {
+  @apply bg-[#8B5E3C]/20 border border-transparent hover:border-[#A67B5B] transition-all duration-300;
+}
+
+body:not(.dark) .mobile-navbar-background {
+  @apply bg-[#B4846C] sm:bg-transparent;
+}
+
+body:not(.dark) .hero-button {
+  @apply bg-[#A0522D] hover:bg-[#5C3921] hover:border hover:border-[#D9A074] text-white;
+}
+
+/* 🟢 Hero Title Background */
+body:not(.dark) .herotitle-background {
+  @apply bg-gradient-to-r from-[#A0522D] via-[#C18F6D] to-[#6B4226];
+}
+
+/* 🌐 Social Icons */
+body:not(.dark) .socialicons {
+  @apply invert-0 hover:scale-110 transition-all duration-300;
+}
+
+body:not(.dark) .category-tag {
+  @apply bg-[#F4ECE1] border text-[#5A3E2B];
+}
+
+body:not(.dark) .socialmediaicon {
+  @apply bg-[#C9B29B] p-1 border border-[#B98E6C] hover:scale-110;
+}
+
+body:not(.dark) .arrow {
+  @apply invert-0;
+}
+
+body:not(.dark) .arrowbutton {
+  @apply bg-[#D9A074] hover:bg-[#8B5E3C] border-[#A0522D] text-white;
+}
+
+body:not(.dark) .skill-card {
+  @apply border-[#B57D52] bg-white/40;
+}
+
+body:not(.dark) .submit-button {
+  @apply bg-[#8C5A3C] hover:bg-[#5A3E2B] border-[#6E442B] text-white;
+}
+
+body:not(.dark) .submit-button-icon {
+  @apply invert-0;
+}
+
+/* 🔗 Enlaces y Hover */
+body:not(.dark) a {
+  @apply text-[#6E442B] hover:text-[#3B2F2F] underline-offset-2;
+}
+
+/* 📌 Links en el Header */
+body:not(.dark) .header-li {
+  @apply hover:bg-[#B4846C] px-1 hover:font-bold hover:text-white;
+}
+
+body:not(.dark) .experience-card {
+  @apply bg-transparent border-[#A0522D];
+}
+
+body:not(.dark) .border-line {
+  @apply border-[#B57D52];
+}
+
+/* 📜 Listas */
+body:not(.dark) ul, body ol {
+  @apply list-none;
+}
+
+/* 🛑 Bordes */
+body:not(.dark) hr, body input, body select, body textarea {
+  @apply bg-transparent border-[#D9A074] focus:border-[#C18F6D] focus:ring focus:ring-[#B98E6C];
+}
+
+/* 🖋️ Títulos */
+body:not(.dark) h1, body h2, body h3, body h4, body h5, body h6 {
+  @apply font-extrabold text-[#3B2F2F];
+}
+
+/* 📝 Párrafos */
+body:not(.dark) p {
+  @apply text-[#4A382D] leading-relaxed;
+}
+
+/* 🟢 Post Card */
+body:not(.dark) .post-card {
+  @apply border-[#B57D52] bg-white/75;
+}
+
+/* 🔵 Selección de Texto */
+body:not(.dark) ::selection {
+  @apply bg-[#D9A074] text-white;
+}
+
+
+
+/* Estilos para body en modo oscuro */
+body.dark {
+  @apply bg-slate-900; /* Fondo oscuro y texto claro */
+}
+
+button.dark {
+  @apply bg-cyan-500 text-slate-950; /* Botón cian con texto oscuro */
+}
+
+/* Selección */
+body.dark ::selection {
+  @apply bg-cyan-500 text-slate-950; /* Fondo de selección con cian */
+}
+
+body.dark label {
+  @apply text-cyan-500
+}
+
+/* Bordes */
+body.dark hr, body.dark input, body.dark select, body.dark textarea {
+  @apply bg-transparent border border-cyan-400/30 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-gray-200 
+}
+
+/* Títulos */
+body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
+  @apply text-cyan-400; /* Títulos en color claro */
+}
+
+body.dark .page-title {
+  @apply text-gray-200
+}
+
+body.dark .skill-card {
+  @apply border-cyan-500/30 bg-black/40
+}
+
+body.dark .contact-form{
+  @apply border-none bg-black/20 shadow-lg
+}
+
+body.dark .experience-card {
+  @apply border-cyan-500/30 bg-black/30
+}
+
+body.dark .border-line {
+  @apply border-cyan-600
+}
+
+body.dark .arrow {
+  @apply invert 
+}
+
+body.dark .category-tag {
+  @apply border border-transparent bg-slate-900 
+}
+
+/* Párrafos */
+body.dark p {
+  @apply text-gray-300 leading-relaxed; /* Texto más suave en modo oscuro */
+}
+
+body.dark a {
+  @apply text-cyan-400 hover:text-black
+}
+
+body.dark span {
+  @apply text-cyan-300
+}
+
+body.dark .hero-text {
+  @apply bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500 bg-clip-text text-transparent
+}
+
+body.dark .herotitle-background {
+  @apply bg-gradient-to-r from-teal-400 via-cyan-500 to-blue-500
+}
+
+body.dark .job-title {
+   @apply text-black/80
+}
+
+body.dark .footer-background {
+  @apply bg-black/60 text-cyan-500
+}
+
+body.dark .mobile-navbar-background {
+  @apply bg-slate-900 sm:bg-transparent
+}
+
+body.dark .hero-button {
+  @apply bg-slate-950 hover:bg-black hover:border-cyan-500 hover:border
+}
+
+body.dark .toogle-background {
+  @apply bg-black/20 border border-transparent hover:border-cyan-500
+}
+
+body.dark .post-card {
+  @apply border-cyan-500/30 bg-black/50
+}
+
+/* Enlaces */
+body.dark .header-li {
+  @apply hover:bg-cyan-400 px-1 hover:font-bold text-cyan-100;
+}
+
+body.dark .arrowbutton {
+  @apply bg-slate-950 hover:border-cyan-500
+}
+
+body.dark .socialicons {
+  @apply invert hover:scale-110 transition-all duration-300
+}
+
+body.dark .socialmediaicon {
+  @apply invert-0 bg-black/60 p-1 border border-transparent hover:border hover:border-cyan-400
+}
+
+body.dark .submit-button {
+  @apply text-cyan-500 hover:border-cyan-500
+}
+
+body.dark .submit-button-icon {
+  @apply invert brightness-0
+}
+
+/* Listas */
+body.dark ul, body.dark ol {
+  @apply list-none; 
+}
+
+}
+
+
+
+.published_at {
+  @apply w-full text-sm font-medium text-black px-6 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500
+
+}
+
+select {
+  @apply w-full text-sm font-medium text-black px-6 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500
+}
+
+textarea {
+  @apply w-full text-sm font-medium text-black px-6 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500
+}
+
+
+trix-toolbar .trix-button--icon {
+  -webkit-filter: invert(100%);
+}
+
+.trix-content {
+  z-index: 1;  /* Asegúrate de que esté detrás de otros campos del formulario */
+}
+
+body {
+  height: 100vh; /* Asegura que el contenido no se corte */
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.clip-inset {
+  clip-path: circle(40%);
+}
+
+/*FADE IN ANIMATION */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+/*SCALE IN ANIMATION */
+
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.75);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-scale {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+/*LOADING BAR ANIMATION */
+
+@keyframes loadingBar {
+  0% {
+    opacity: 0;
+    transform: translateX(-1%) scaleX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scaleX(1);
+  }
+}
+
+.animate-loading-bar {
+  animation: loadingBar 1s ease-in-out forwards;
+  transform-origin: center; /* La expansión comienza desde la izquierda */
+}

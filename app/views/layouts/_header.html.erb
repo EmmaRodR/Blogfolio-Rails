@@ -1,0 +1,47 @@
+<div class="relative flex bg-transparent sm:p-10 w-full h-[80px] text-5xl">
+  <nav class="relative flex sm:flex-row justify-between items-center gap-8 p-6 sm:p-0 w-full font-mono">
+    <!-- Checkbox oculto que controla la visibilidad del menú -->
+    <input type="checkbox" id="menu-toggle" class="peer hidden">
+    <label for="menu-toggle" class="sm:hidden top-2 left-2 z-40 text-lg pointer">☰</label>
+    <!-- Botón hamburguesa -->
+    <!-- Menú -->
+    <ul class="top-0 left-0 z-0 peer-checked:z-30 absolute sm:relative flex sm:flex sm:flex-row flex-col justify-start items-start gap-6 sm:gap-4 sm:bg-transparent sm:p-0 px-4 py-[124px] w-full h-screen sm:h-auto transition-all duration-500 mobile-navbar-background sm:[clip-path:none] [clip-path:circle(0%_at_2rem_2rem)] peer-checked:[clip-path:circle(150%_at_2rem_2rem)]">
+      <li class="bg-transparent text-[24px] sm:text-sm transition-all duration-500 ease-in-out header-li"><a>
+          <%= link_to t('navbar.home') , home_path  %>
+        </a>
+      </a></li>
+    <li class="bg-transparent text-[24px] sm:text-sm transition-all duration-500 ease-in-out header-li"><a>
+        <%= link_to t('navbar.articles') , posts_path %>
+      </a></li>
+    <li class="bg-transparent text-[24px] sm:text-sm transition-all duration-500 ease-in-out header-li"><a>
+        <%= link_to t('navbar.about_me') , about_path %>
+      </a></li>
+    <li class="bg-transparent text-[24px] sm:text-sm transition-all duration-500 ease-in-out header-li"><a>
+        <%= link_to t('navbar.contact') , contact_form_path  %>
+      </a></li>
+  </ul>
+  <% if user_signed_in? %>
+    <ul class="flex gap-4">
+      <li class="bg-transparent text-[24px] sm:text-sm transition-all duration-500 ease-in-out header-li">
+        <%= link_to "Profile" , edit_user_registration_path, class: "hover:underline" %>
+      </li>
+      <li class="bg-transparent text-[24px] sm:text-sm transition-all duration-500 ease-in-out header-li">
+        <%= button_to "Logout" , destroy_user_session_path, method: :delete, class: "hover:underline" %>
+      </li>
+    </ul>
+  <% else %>
+    <!--  <ul class="flex gap-4">
+        <li class="bg-transparent text-[24px] sm:text-sm transition-all duration-500 ease-in-out header-li"><a>
+            <%= link_to t('navbar.login') , new_user_session_path %>
+          </a></li>
+        <li class="bg-transparent text-[24px] sm:text-sm transition-all duration-500 ease-in-out header-li"><a>
+            <%= link_to t('auth_navbar.register_text') , new_user_registration_path %>
+          </a></li>
+      </ul>
+      -->
+  <% end %>
+  <div class="z-40 flex">
+    <%= render partial: "shared/themeToogle"%>
+  </div>
+</nav>
+</div>

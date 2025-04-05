@@ -1,0 +1,67 @@
+# Files in the config/locales directory are used for internationalization and
+# are automatically loaded by Rails. If you want to use locales other than
+# English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more about the API, please read the Rails Internationalization guide
+# at https://guides.rubyonrails.org/i18n.html.
+#
+# Be aware that YAML interprets the following case-insensitive strings as
+# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
+# must be quoted to be interpreted as strings. For example:
+#
+#     en:
+#       "yes": yup
+#       enabled: "ON"
+
+es:
+  home:
+    job_title: "QA & Software Developer"
+    welcome_message: "¡Bienvenido a mi Blogfolio!"
+    hero_button: "Descubre más"
+    name: "Emmanuel Rodriguez"
+  footer:
+    text: "Desarrollado con Ruby on Rails | Emmanuel Rodriguez © 2025"
+  navbar:
+    home: "Inicio"
+    articles: "Artículos"
+    about_me: "Sobre mí"
+    contact: "Contacto"
+  auth_navbar:
+     login: "Login"
+     register_text: "Registrarse"
+  articles:
+    title: "Artículos"
+    work-from-finance-to-qa-professional:
+      date: "06/03/2025"
+      category: "Experiencia"
+      title: "De Finanzas a QA: El camino 🧑‍💻"
+      description: "Al pasar de finanzas a QA, descubrí mi pasión por la calidad del software, desarrollé una gran pasión por garantizar la calidad del software. Aquí te cuento cómo mi experiencia previa moldeó mi enfoque en pruebas y las habilidades que adquirí en el camino."
+      read_more: "Leer el artículo completo ->"
+    from-coding-to-testing-my-skillset:
+      date: "06/03/2025"
+      category: "Habilidades"
+      title: "Pruebas y Codigo: Mi Conjunto de Habilidades 💻🔧"
+      description: "Como QA Tester con casi 2 años de experiencia, garantizo la calidad del software a través de pruebas rigurosas y mejores prácticas. Desde pruebas backend y automatización hasta desarrollo de APIs, he perfeccionado mis habilidades en sistemas bancarios, frontend con React y microservicios. En este artículo, recorreremos las habilidades clave que potencian mi enfoque de pruebas."
+      read_more: "Leer el artículo completo ->"
+    my-educational-journey-in-software-testing:
+      date: "06/03/2025"
+      category: "Educación"
+      title: "Mi Trayectoria Educativa hacia el Testing de Software 🎓✨"
+      description: "Desde Tecnología y Finanzas hasta Relaciones Laborales y Pruebas de Software, mi educación ha sido un viaje diverso, cada paso contribuyendo a mi desarrollo como QA Tester."
+      read_more: "Leer el artículo completo ->"
+  
+

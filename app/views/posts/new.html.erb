@@ -1,0 +1,10 @@
+<div class="flex flex-col justify-center items-center gap-8">
+  <%= render partial: "shared/title", locals: {title: "New Post"} %>
+  <%= render partial: "form",locals: {resource: @post ,text: "Create",url: posts_path, method: :post, confirm: false,submit_text: "Create",
+    fields: [
+    { name: :title, type: "text", label: "Title", placeholder: "" },
+    { name: :description, type: "textarea", label: "Description", placeholder: "" },
+    { name: :category, type: "select", options: Post.categories.keys.map { |key| [key.titleize, key] }, label: "Category" }
+
+  ]} %>
+</div>

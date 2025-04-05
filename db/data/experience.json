@@ -1,0 +1,64 @@
+{
+  "experience": [
+    {
+      "company": "CPA Ferrere",
+      "logourl": "cpa.jpg",
+      "role": "QA Software Tester",
+      "duration": "Jun 2023 - Present",
+      "location": "Montevideo, Uruguay · Hybrid",
+      "responsibilities": [
+        "Testing de Core Banking Topaz",
+        "Testing de backend con Oracle SQL",
+        "Analisis y creacion de casos de prueba",
+        "Testing de servicios API REST con Postman"
+      ],
+      "skills": [
+        "Java",
+        "Oracle SQL Developer",
+        "API Testing"
+      ]
+    },
+    {
+      "company": "Paigo",
+      "logourl": "paigo.jpg",
+      "role": "Back Office Assistant",
+      "duration": "Aug 2022 - Jun 2023",
+      "location": "Montevideo, Uruguay",
+      "responsibilities": [
+        "Gestión y logística de transferencias bancarias vinculadas a créditos",
+        "Realización de transferencias bancarias y verificación de datos",
+        "Gestión de anulaciones y rebotes bancarios"
+      ],
+      "skills": [
+        "Banking",
+        "Transferencias bancarias"
+      ]
+    },
+    {
+      "company": "La Favorita Servicios Financieros",
+      "logourl": "favorita.jpg",
+      "role": "Auxiliar de Cambio II",
+      "duration": "Aug 2018 - Jun 2022",
+      "location": "Montevideo, Uruguay",
+      "responsibilities": [
+        "Gestion de cambio de moneda y transferencias bancarias",
+        "Actualizacion de cotizaciones en la web",
+        "Envio y control de remesas"
+      ]
+    },
+    {
+      "company": "Netgate Uruguay",
+      "logourl": "netgate.jpg",
+      "role": "Agente de atención telefónica",
+      "duration": "Feb 2016 - May 2017",
+      "location": "Montevideo, Uruguay",
+      "responsibilities": [
+        "Soporte técnico N2 a usuarios y clientes",
+        "Solucion de problemas relacionados con redes e internet",
+        "Configuración de módems y routers",
+        "Configuración de correo corporativo"
+
+      ]
+    }
+  ]
+}

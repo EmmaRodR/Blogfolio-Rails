@@ -1,0 +1,35 @@
+<div data-controller="home" class="flex sm:flex-row flex-col items-center gap-8 sm:gap-12 mb-10 px-10 sm:px-0">
+  <div class="flex flex-col justify-start items-start gap-4 w-full sm:w-1/2">
+    <h2 data-home-target="fade"
+        class="opacity-0 mb-4 font-mono font-bold text-lg sm:text-3xl text-start tracking-wide scale-95 transition-all duration-700 transform">
+      Acerca de mí
+    </h2>
+    <p data-home-target="fade"
+       class="opacity-0 mb-4 sm:mb-6 sm:text-md text-sm leading-relaxed transition-all translate-y-6 duration-700 transform">
+      Soy un <span class="">QA & Software Developer</span> apasionado por la calidad del software y siempre en busca de nuevas tecnologías para explorar.  
+      Me especializo en <span class="">testing manual y automatizado</span>, además de contar con experiencia en desarrollo backend y frontend.
+    </p>
+    <p data-home-target="fade"
+       class="opacity-0 mb-4 sm:mb-6 sm:text-md text-sm leading-relaxed transition-all translate-y-6 duration-700 transform">
+      Más allá del mundo IT, disfruto del <span class="">cine y las series</span>, siempre en busca de historias que me sorprendan.  
+      Soy fan de los thrillers, las series de misterio y el anime.
+    </p>
+    <p data-home-target="fade"
+       class="opacity-0 mb-4 sm:mb-6 sm:text-md text-sm leading-relaxed transition-all translate-y-6 duration-700 transform">
+      También me gusta mantenerme activo practicando diversos deportes, aunque tengo una especial afinidad por las  
+      <span class="">artes marciales</span>, que me ayudan a mantener el enfoque y la disciplina.
+    </p>
+    <div data-home-target="fade"
+         class="flex sm:flex-row flex-col justify-start items-start sm:items-center gap-4 sm:gap-8 opacity-0 mt-4 sm:mt-6 w-full transition-all translate-y-6 duration-700 transform">
+      <%= render "shared/arrowbutton", text: "Descargar CV", path: root_path, show_icon: true, extra_classes: "arrowbutton duration-500 px-4 py-2 transition-all text-xs" %>
+      <div class="flex flex-row gap-4 mt-2 sm:mt-0">
+        <%= render "shared/socialmediaicon", icon: "linkedin", url: "https://www.linkedin.com/in/emmanuelrodr%C3%ADguezbuzzo/", size: 26 %>
+        <%= render "shared/socialmediaicon", icon: "github", url: "https://github.com/EmmaRodR", size: 26 %>
+      </div>
+    </div>
+  </div>
+  <div data-home-target="fade"
+       class="flex justify-center opacity-0 mt-8 sm:mt-0 w-full sm:w-1/4 transition-all translate-y-6 duration-700">
+    <%= image_tag "avatarprofile.jpg", alt: "Foto de perfil", class: "w-4/5 sm:w-[400px] h-auto rounded-full sm:rounded shadow-xl object-cover" %>
+  </div>
+</div>

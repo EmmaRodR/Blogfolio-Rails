@@ -1,0 +1,15 @@
+{
+  "version": "1.0.4",
+  "createdAt": "2025-02-26T16:45:25.054Z",
+  "updatedAt": "2025-03-29T00:58:25.899Z",
+  "options": {
+    "ignoredControllerIdentifiers": [
+      "home",
+      "posts",
+      "sound",
+      "theme",
+      "work"
+    ],
+    "ignoredAttributes": []
+  }
+}

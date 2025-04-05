@@ -1,0 +1,13 @@
+<div>
+  <button  type="button"
+    data-controller="sound"
+   data-sound-sound-value="<%= asset_path('click.mp3') %>"
+ data-action="click->theme#toggleTheme click->sound#play" data-theme-target="toggleTheme" class="flex flex-row p-2 rounded shadow-lg toogle-background">
+    <div data-theme-target="darkIcon" class="hidden">
+      <%= image_tag("moon.svg",class: "w-4 hover:animate-spin transition-all duration-500 invert opacity-70") %>
+    </div>
+    <div data-theme-target="lightIcon" class="hidden">
+      <%= image_tag("sun.svg",class: "w-4 hover:animate-spin transition-all duration-500 invert opacity-70") %>
+    </div>
+  </button>
+</div>

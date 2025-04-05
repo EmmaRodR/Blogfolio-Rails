@@ -1,0 +1,74 @@
+{
+  "skills": {
+    "Lenguajes_de_programacion": [
+      {
+        "name": "Java",
+        "iconurl": "java.svg",
+        "description": "Lenguaje de programación robusto y orientado a objetos, ampliamente utilizado en desarrollo empresarial, aplicaciones web y sistemas backend."
+      },
+      {
+        "name": "JavaScript",
+        "iconurl": "js.png",
+        "description": "Lenguaje de programación dinámico y versátil, esencial para el desarrollo web frontend y backend con Node.js."
+      },
+      {
+        "name": "TypeScript",
+        "iconurl": "typescript.png",
+        "description": "Superset de JavaScript que agrega tipado estático, mejorando la escalabilidad y mantenibilidad del código en aplicaciones web modernas."
+      }, 
+      {
+        "name": "Ruby",
+        "iconurl": "ruby.svg",
+        "description": "Lenguaje de programación enfocado en simplicidad y productividad, con una sintaxis elegante y ampliamente utilizado en desarrollo web con Rails."
+      }
+    ],
+    "Frameworks": [
+      {
+        "name": "Spring Boot",
+        "iconurl": "spring.svg",
+        "description": "Framework para aplicaciones Java que simplifica el desarrollo backend, proporcionando configuración automática y soporte para microservicios."
+      },
+      {
+        "name": "Ruby on Rails",
+        "iconurl": "rails.svg",
+        "description": "Framework web basado en Ruby que sigue el patrón MVC, facilitando el desarrollo rápido con convenciones y herramientas eficientes."
+      }
+    ],
+    "Bases_de_datos": [
+      {
+        "name": "Oracle SQL",
+        "iconurl": "oracle.png",
+        "description": "Sistema de gestión de bases de datos relacional ampliamente utilizado en entornos empresariales para manejar grandes volúmenes de datos de manera segura y eficiente."
+      },
+      {
+        "name": "PostgreSQL",
+        "iconurl": "postgre.png",
+        "description": "Base de datos relacional de código abierto conocida por su fiabilidad, extensibilidad y cumplimiento de estándares SQL avanzados."
+      }
+    ],
+    "Herramientas_de_automatizacion": [
+      {
+        "name": "Selenium",
+        "iconurl": "selenium.svg",
+        "description": "Herramienta de automatización para pruebas en navegadores web, utilizada para validar interfaces y flujos de usuario de manera eficiente."
+      },
+      {
+        "name": "Playwright",
+        "iconurl": "playwright.svg",
+        "description": "Framework moderno de automatización de pruebas para navegadores, compatible con múltiples motores y diseñado para pruebas de alto rendimiento."
+      }
+    ],
+    "Otras_herramientas": [
+      {
+        "name": "Docker",
+        "iconurl": "docker.png",
+        "description": "Plataforma para la creación y gestión de contenedores, permitiendo el desarrollo y despliegue de aplicaciones de manera portátil y escalable."
+      },
+      {
+        "name": "Postman",
+        "iconurl": "postman.svg",
+        "description": "Herramienta para el desarrollo y prueba de APIs, permitiendo realizar peticiones, validar respuestas y automatizar flujos de prueba."
+      }
+    ]
+  }
+}

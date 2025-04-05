@@ -1,0 +1,34 @@
+<% @experiences["experience"].each do |experience| %>
+  <div class="flex flex-col gap-6 shadow-xl p-6 border rounded-2xl w-full sm:w-[560px] h-auto h-auto sm:min-h-[260px] font-sans experience-card">
+    <!-- Header de la card -->
+    <div class="flex flex-row gap-6 pb-4 border-b border-line">
+      <div class="rounded-lg w-[48px] h-[48px] overflow-hidden">
+        <%= image_tag("#{experience["logourl"]}", class:"rounded-lg hover:scale-105 cursor-pointer transition-transform duration-300 ease-in-out") %>
+      </div>
+      <div class="flex flex-col gap-1">
+        <h2 class="font-mono font-bold text-sm">
+          <%= experience["company"].present? ? experience["company"].upcase : "Company not specified" %>
+        </h2>
+        <p class="font-sans text-xs">
+          <%= experience["role"].present? ? experience["role"] : "Role not specified" %>
+        </p>
+        <p class="opacity-70 font-mono text-[11px]">
+          <%= experience["duration"].present? ? experience["duration"].upcase : "Duration not specified" %>
+        </p>
+      </div>
+    </div>
+    <!-- Contenedor flexible -->
+    <div class="flex flex-col flex-grow justify-between">
+      <div class="flex flex-col space-y-2">
+        <% experience["responsibilities"].each do |responsibility| %>
+          <div class="flex flex-row items-center gap-2">
+            <p class="text-cyan-400"> → </p>
+            <p class="font-sans text-xs">
+              <%= responsibility.present? ? responsibility.humanize : "Responsibility not specified" %>
+            </p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+<% end %>

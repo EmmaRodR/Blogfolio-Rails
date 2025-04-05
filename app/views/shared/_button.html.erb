@@ -1,0 +1,4 @@
+<div>
+  <%= button_to submit_text, path ,method: method ,
+  class: "flex w-[120px] justify-center w-full border border-transparent text-xs #{confirm ? 'bg-red-600 hover:bg-rose-800' : "hero-button"} items-center px-6 py-2 text-white/80 rounded-md transition duration-300", data: confirm ? {turbo_confirm: "Are you sure"} : {}%>
+</div>

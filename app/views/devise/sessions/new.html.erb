@@ -1,0 +1,12 @@
+<div class="flex flex-col justify-center items-center gap-8">
+
+<%= render partial: "shared/title", locals: {title: "Login"} %>
+
+<%= render "posts/form", resource: resource,url: user_session_path,method: :post, submit_text: "Login",
+fields: [
+        { name: :email, type: "email", label: "Email", placeholder: "example@mail.com" },
+        { name: :password, type: "password", label: "Password", placeholder: "********" },
+      ] %>
+
+</div>
+

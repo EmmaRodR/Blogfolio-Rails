@@ -1,0 +1,11 @@
+<div class="flex flex-col justify-center items-center gap-8 mb-10">
+  <%= render partial: "shared/title", locals: {title: "Edit Post"} %>
+  <%= render partial: "form",locals: {resource: @post, submit_text: "Update",url: post_path(@post), method: :patch, confirm: false,submit_text: "Update",
+    fields: [
+    { name: :title, type: "text", label: "Title", placeholder: "" },
+    { name: :description, type: "text", label: "Description", placeholder: "" },
+    { name: :content, type: "textarea", label: "Content", placeholder: ""},
+    { name: :category, type: "select", options: Post.categories.keys.map { |key| [key.titleize, key] }, label: "Category" },
+    { name: :published_at, type: "datetime_field", label: "Published Date", placeholder: ""}
+  ]} %>
+</div>
