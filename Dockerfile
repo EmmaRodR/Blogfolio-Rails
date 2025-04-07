@@ -19,6 +19,13 @@ RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y curl libjemalloc2 libvips sqlite3 && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
+    # Instalar Node.js (si no está ya instalado)
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+apt-get install -y nodejs
+
+# Instalar Yarn
+RUN npm install -g yarn
+
 # Set production environment
 ENV RAILS_ENV="production" \
     BUNDLE_DEPLOYMENT="1" \
