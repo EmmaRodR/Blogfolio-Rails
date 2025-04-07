@@ -17,7 +17,7 @@
         <%= t("articles.#{post.slug}.description", default: post.description) %>
       </p>
       <h2 class="mt-10 text-sm">
-        <%= render "shared/arrowbutton", text: "Leer el articulo completo", path: post_path(post.slug), show_icon: true, extra_classes: "bg-transparent font-sans hover:underline hover:decoration-cyan-500" %>
+        <%= render "shared/arrowbutton", text: "Leer el articulo completo", path: post_path(post.slug), show_icon: true, extra_classes: "bg-transparent font-sans hover:underline" %>
       </h2>
     </div>
   <% end %>
