@@ -8,3 +8,7 @@ Rails.application.config.assets.paths << Rails.root.join("app/assets/builds")
 # Rails.application.config.assets.paths << Emoji.images_path
 Rails.application.config.assets.precompile += %w( click.mp3,snap.mp3 )
 Rails.application.config.assets.precompile += %w( application.tailwind.css )
+# config/initializers/assets.rb
+
+# Agregar los archivos JSON a la precompilación
+Rails.application.config.assets.precompile += %w( experience.json skills.json education.json )
