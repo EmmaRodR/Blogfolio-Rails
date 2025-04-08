@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
-gem "rails", "~> 8.0.1"
+gem "rails", "~> 8.0.2"
 gem "device"
 gem "faker"
 gem 'flatpickr'
@@ -84,4 +84,4 @@ gem "devise", "~> 4.9"
 
 gem "dotenv-rails", "~> 3.1"
 
-gem "tailwindcss-ruby", "~> 3.4"
+gem "tailwindcss-ruby", "~> 4.1"
