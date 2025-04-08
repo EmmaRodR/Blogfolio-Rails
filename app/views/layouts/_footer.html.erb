@@ -1,6 +1,6 @@
-<div class="footer-background flex flex-col sm:flex-row items-center w-full justify-center sm:w-full p-4 lg:p-[12px] sm:p-[6px]">
-  <p class="font-mono text-xs sm:text-xs md:text-xs lg:text-xs"><%= t('footer.text')%></p>
-  <div class="flex-col hidden gap-4 sm:absolute sm:flex sm:right-10 sm:flex-row">
+<div class="flex sm:flex-row flex-col justify-center items-center p-2 sm:p-[6px] lg:p-[12px] w-full sm:w-full footer-background">
+  <p class="hidden sm:flex font-mono sm:text-xs md:text-xs lg:text-xs whitespace-nowrap"><%= t('footer.text')%></p>
+  <div class="sm:right-10 sm:absolute flex sm:flex flex-row sm:flex-row gap-4">
     <%= render partial: "shared/socialmediaicons" %>
   </div>
 </div>

@@ -32,7 +32,8 @@ es:
     job_title: "QA & Software Developer"
     welcome_message: "¡Bienvenido a mi Blogfolio!"
     hero_button: "Descubre más"
-    name: "Emmanuel Rodriguez"
+    name: "Emmanuel"
+    last_name: "Rodriguez"
   footer:
     text: "Desarrollado con Ruby on Rails | Emmanuel Rodriguez © 2025"
   navbar:
