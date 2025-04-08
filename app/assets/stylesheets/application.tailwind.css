@@ -23,7 +23,7 @@ body:not(.dark) .hero-text {
 }
 
 body:not(.dark) .hero-title {
-  @apply font-extrabold text-[#5A3E2B];
+  @apply text-[#5A3E2B];
 }
 
 body:not(.dark) .hero-background {

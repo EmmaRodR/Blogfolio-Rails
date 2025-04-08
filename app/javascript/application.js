@@ -1,8 +1,11 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
-import "@hotwired/turbo-rails";
-import "controllers";
+// app/javascript/controllers/application.js
+import { Application } from "@hotwired/stimulus";
+import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading";
 
+const application = Application.start();
 
-import "@rails/actiontext";
-import "trix";
+// Cargar todos los controladores desde la carpeta "controllers"
+eagerLoadControllersFrom("controllers", application);
+
+export { application };
 

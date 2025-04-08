@@ -1,11 +1,11 @@
 <!-- Contenedor principal -->
-<div data-controller="home" class="flex flex-col items-center justify-center w-full mb-10">
+<div data-controller="home" class="flex flex-col justify-center items-center mb-10 w-full">
   <!-- Título animado -->
   <div class="space-y-10 text-center">
     <%= render partial: "pages/home/herotext" %>
     <!-- Boton Hero -->
   </div>
-  <div data-home-target="fade" class="flex flex-row gap-4 justify-center items-center mt-[50px] opacity-0 translate-y-6 transition-all duration-700">
+  <div data-home-target="fade" class="flex flex-row justify-center items-center gap-4 opacity-0 mt-[50px] transition-all translate-y-6 duration-700">
     <%= render partial: "shared/button", locals: {submit_text: t('home.hero_button'), path: posts_path,method: :get,confirm: false} %>
   </div>
 </div>
