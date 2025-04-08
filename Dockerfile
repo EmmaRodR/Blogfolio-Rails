@@ -54,7 +54,7 @@ RUN bundle exec bootsnap precompile app/ lib/
 RUN sed -i 's/\r$//' bin/*
 RUN chmod +x bin/*
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN SECRET_KEY_BASE_DUMMY=1
+RUN SECRET_KEY_BASE_DUMMY=1 RAILS_ENV=production ./bin/rails assets:precompile
 
 
 
@@ -76,6 +76,5 @@ USER 1000:1000
 ENTRYPOINT ["/rails/bin/docker-entrypoint"]
 
 # Start server via Thruster by default, this can be overwritten at runtime
-RUN bundle exec rails tailwindcss:build
 EXPOSE 80
 CMD ["./bin/thrust", "./bin/rails", "server"]
