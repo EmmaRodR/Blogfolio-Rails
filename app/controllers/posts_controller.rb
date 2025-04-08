@@ -67,9 +67,9 @@ class PostsController < ApplicationController
 
       def handle_special_redirection
         case @post.id
-        when 12 then redirect_to work_path
-        when 13 then redirect_to skills_path
-        when 14 then redirect_to education_path
+        when 1 then redirect_to work_path
+        when 2 then redirect_to skills_path
+        when 3 then redirect_to education_path
         else
           render 'show',formats: :html # Renderiza la vista normal si no es uno de los posts especiales
         end
