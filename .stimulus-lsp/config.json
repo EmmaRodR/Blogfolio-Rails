@@ -1,15 +1,17 @@
 {
   "version": "1.0.4",
   "createdAt": "2025-02-26T16:45:25.054Z",
-  "updatedAt": "2025-04-08T00:26:39.184Z",
+  "updatedAt": "2025-04-08T18:29:35.289Z",
   "options": {
     "ignoredControllerIdentifiers": [
+      "home",
       "posts",
       "sound",
       "theme",
       "work"
     ],
     "ignoredAttributes": [
+      "data-home-target",
       "data-s-target"
     ]
   }
