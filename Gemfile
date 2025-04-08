@@ -84,4 +84,3 @@ gem "devise", "~> 4.9"
 
 gem "dotenv-rails", "~> 3.1"
 
-gem "tailwindcss-ruby", "~> 3.4"

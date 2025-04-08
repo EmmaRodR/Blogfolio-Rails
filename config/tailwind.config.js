@@ -2,9 +2,9 @@
 module.exports = {
   content: [
     './app/views/**/*.{html,erb}',
-    './app/**/*.{html,js,erb,css}',
-    './app/helpers/**/*.rb',
-    './app/assets/stylesheets/**/*.{css,scss}',
+    './app/javascript/**/*.{js,jsx,ts,tsx}',  // Si usas JavaScript/JSX/TSX
+    './app/assets/stylesheets/**/*.{css,scss}',    './app/helpers/**/*.rb',
+    // Si usas SCSS o CSS
   ],
   theme: {
     extend: {},
