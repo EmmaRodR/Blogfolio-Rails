@@ -54,7 +54,7 @@ RUN bundle exec bootsnap precompile app/ lib/
 RUN sed -i 's/\r$//' bin/*
 RUN chmod +x bin/*
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
-RUN RUN SECRET_KEY_BASE_DUMMY=1
+RUN SECRET_KEY_BASE_DUMMY=1
 
 
 
