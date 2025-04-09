@@ -1,24 +1,39 @@
-# README
+# 📘 Blogfolio-Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Un proyecto de **Blogfolio** simple desarrollado con **Ruby on Rails**, integrando Docker para un entorno de desarrollo portable. Ideal como portafolio personal o blog técnico.
 
-Things you may want to cover:
+---
 
-* Ruby version
+## 🧰 Tecnologías utilizadas
 
-* System dependencies
+- 💎 **Ruby on Rails**
+- 🐳 **Docker** + **Kamal**
+- 🐘 **PostgreSQL**
+- ⚙️ **StimulusJS**
+- 📦 **Yarn / Node.js**
 
-* Configuration
+---
 
-* Database creation
+## 🚀 Instalación y uso local
 
-* Database initialization
+# 1. Clona el repositorio
+git clone https://github.com/EmmaRodR/Blogfolio-Rails.git
+cd Blogfolio-Rails
 
-* How to run the test suite
+# 2. Copia el archivo de entorno
+cp enviroment.env .env
 
-* Services (job queues, cache servers, search engines, etc.)
+# 3. Construye los contenedores (si usas Docker)
+docker-compose up --build
 
-* Deployment instructions
+# 4. Instala dependencias
+bundle install
+yarn install
 
-* ...
+# 5. Configura la base de datos
+rails db:create
+rails db:migrate
+rails db:seed
+
+# 6. Inicia el servidor
+rails s
