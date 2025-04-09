@@ -3,7 +3,7 @@
     <% next if post.nil? %>
     <div data-posts-target="fade" class="flex flex-col justify-between gap-4 opacity-0 shadow-md p-4 rounded-lg max-w-sm h-[350px] font-sans transition-all translate-y-6 duration-500 post-card">
       <div class="flex flex-row justify-between items-center mb-2">
-        <p class="font-mono text-xs">
+        <p class="font-mono text-xs date-p">
           <%= post.published_at.strftime("%d/%m/%Y") if post.published_at %>
         </p>
         <div class="bg-white px-2 py-1 rounded w-fit font-mono text-[10px] category-tag">

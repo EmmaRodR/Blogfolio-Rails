@@ -1,16 +1,16 @@
-<div data-controller="home" class="flex flex-row items-center gap-12 mb-10">
-  <div class="flex flex-col items-start justify-start gap-4">
+<div data-controller="home" class="flex flex-row items-center gap-12 mb-10 px-10 py-8">
+  <div class="flex flex-col justify-start items-start gap-4">
     <h2 data-home-target="fade"
-        class="mb-4 font-mono text-xl font-bold tracking-wide transition-all duration-700 transform scale-95 opacity-0 text-start md:text-3xl ">
+        class="opacity-0 mb-4 font-mono font-bold text-xl md:text-3xl text-start tracking-wide scale-95 transition-all duration-700 transform">
       ¿Quieres contactarme?
     </h2>
     <p data-home-target="fade"
-       class="mb-6 leading-relaxed text-gray-300 transition-all duration-700 transform translate-y-6 opacity-0 text-md">
-      Estoy disponible para <span class="font-semibold ">colaboraciones, oportunidades laborales</span> o simplemente para charlar sobre tecnología.  
+       class="opacity-0 mb-6 text-gray-300 text-md leading-relaxed transition-all translate-y-6 duration-700 transform">
+      Estoy disponible para <span class="font-semibold">colaboraciones, oportunidades laborales</span> o simplemente para charlar sobre tecnología.  
       Puedes encontrarme en mis redes sociales o enviarme un mensaje.
     </p>
     <div data-home-target="fade"
-         class="flex flex-row items-center justify-start w-full gap-8 mt-6 transition-all duration-700 transform translate-y-6 opacity-0">
+         class="flex flex-row justify-start items-center gap-8 opacity-0 mt-6 w-full transition-all translate-y-6 duration-700 transform">
       <%= render "shared/mailbutton", text: "Enviar mensaje", path: "#", show_icon: true, extra_classes: "arrowbutton bg-slate-950 hover:border-cyan-500 duration-500 transition-all font-mono text-xs" %>
       <div class="flex flex-row gap-4">
         <%= render "shared/socialmediaicon", icon: "linkedin", url: "https://www.linkedin.com/in/emmanuelrodr%C3%ADguezbuzzo/", size: 26 %>

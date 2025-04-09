@@ -17,6 +17,7 @@ class PostsController < ApplicationController
 
     def create
         @post = Post.new(post_params)
+        @post.published_at = Time.current
         if @post.save
           flash[:success] = "Object successfully created"
           redirect_to root_path

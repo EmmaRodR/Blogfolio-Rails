@@ -7,10 +7,15 @@ input:-webkit-autofill:hover,
 input:-webkit-autofill:focus, 
 input:-webkit-autofill:active {
   background-color: transparent !important;
-  -webkit-box-shadow: 0 0 0px 1000px #1a344663 inset !important; /* Fondo oscuro */
+  -webkit-box-shadow: 0 0 0px 1000px bg-black inset !important; /* Fondo oscuro */
 }
 
 @layer base {
+
+
+body .date-p {
+  @apply opacity-50
+}
 
 /* 🌱 Fondo General */
 body:not(.dark) {
@@ -42,7 +47,7 @@ body:not(.dark) .footer-background {
 
 /* 🎭 Toggle Background */
 body:not(.dark) .toogle-background {
-  @apply bg-[#8B5E3C]/20 border border-transparent hover:border-[#A67B5B] transition-all duration-300;
+  @apply bg-[#D9A074]/70 border hover:border-[#A67B5B] border-transparent transition-all duration-300;
 }
 
 body:not(.dark) .mobile-navbar-background {
@@ -50,7 +55,9 @@ body:not(.dark) .mobile-navbar-background {
 }
 
 body:not(.dark) .hero-button {
-  @apply bg-[#A0522D] hover:bg-[#5C3921] hover:border hover:border-[#D9A074] text-white;
+  @apply bg-[#A0522D] text-white font-semibold px-6 py-3 rounded-lg shadow-md 
+         hover:bg-[#5C3921] hover:border hover:border-[#D9A074]
+         transition-all duration-300 ease-in-out hover:scale-105;
 }
 
 /* 🟢 Hero Title Background */
@@ -67,8 +74,9 @@ body:not(.dark) .category-tag {
   @apply bg-[#F4ECE1] border text-[#5A3E2B];
 }
 
+
 body:not(.dark) .socialmediaicon {
-  @apply bg-[#C9B29B] p-1 border border-[#B98E6C] hover:scale-110;
+  @apply bg-[#D9A074] p-1 border border-[#B98E6C] hover:scale-110;
 }
 
 body:not(.dark) .arrow {
@@ -88,7 +96,7 @@ body:not(.dark) .submit-button {
 }
 
 body:not(.dark) .submit-button-icon {
-  @apply invert-0;
+  @apply invert;
 }
 
 /* 🔗 Enlaces y Hover */
@@ -121,7 +129,7 @@ body:not(.dark) hr, body input, body select, body textarea {
 
 /* 🖋️ Títulos */
 body:not(.dark) h1, body h2, body h3, body h4, body h5, body h6 {
-  @apply font-extrabold text-[#3B2F2F];
+  @apply font-extrabold text-[#3B2F2F]/90;
 }
 
 /* 📝 Párrafos */
@@ -152,7 +160,7 @@ button.dark {
 
 /* Selección */
 body.dark ::selection {
-  @apply bg-cyan-500 text-slate-950; /* Fondo de selección con cian */
+  @apply bg-transparent /* Fondo de selección con cian */
 }
 
 body.dark label {
@@ -166,7 +174,7 @@ body.dark hr, body.dark input, body.dark select, body.dark textarea {
 
 /* Títulos */
 body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
-  @apply text-cyan-400; /* Títulos en color claro */
+  @apply text-cyan-400/80; /* Títulos en color claro */
 }
 
 body.dark .page-title {
@@ -231,7 +239,9 @@ body.dark .mobile-navbar-background {
 }
 
 body.dark .hero-button {
-  @apply bg-slate-950 hover:bg-black hover:border-cyan-500 hover:border
+  @apply bg-gradient-to-r from-cyan-600 to-blue-800 text-white font-semibold 
+         px-6 py-3 rounded-lg shadow-lg hover:from-cyan-400 hover:to-blue-500 
+         transition-all duration-300 ease-in-out hover:scale-105 border-none
 }
 
 body.dark .toogle-background {
@@ -256,7 +266,7 @@ body.dark .socialicons {
 }
 
 body.dark .socialmediaicon {
-  @apply invert-0 bg-black/60 p-1 border border-transparent hover:border hover:border-cyan-400
+  @apply invert-0 bg-slate-950 p-1 border border-transparent hover:border hover:border-cyan-400
 }
 
 body.dark .submit-button {
@@ -282,7 +292,7 @@ body.dark ul, body.dark ol {
 }
 
 select {
-  @apply w-full text-sm font-medium text-black px-6 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500
+  @apply bg-transparent  text-sm font-medium text-black px-6 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500
 }
 
 textarea {

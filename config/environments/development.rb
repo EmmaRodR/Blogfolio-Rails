@@ -8,6 +8,9 @@ Rails.application.configure do
   config.assets.debug = true
   config.assets.check_precompiled_asset = false
   config.assets.digest = false
+  config.assets.compile = true
+  config.assets.quiet = true
+
   # Do not eager load code on boot.
   config.eager_load = false
 
