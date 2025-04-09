@@ -1,22 +1,22 @@
 <div data-controller="posts" class="gap-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 p-6">
   <% @posts.each do |post| %>
     <% next if post.nil? %>
-    <div data-posts-target="fade" class="flex flex-col justify-between gap-4 opacity-0 shadow-md p-4 rounded-lg max-w-sm h-[350px] font-sans transition-all translate-y-6 duration-500 post-card">
+    <div data-posts-target="fade" class="flex flex-col justify-between gap-2 sm:gap-4 opacity-0 shadow-md p-4 rounded-lg max-w-sm h-[300px] font-sans transition-all translate-y-6 duration-500 post-card">
       <div class="flex flex-row justify-between items-center mb-2">
-        <p class="font-mono text-xs date-p">
+        <p class="font-mono text-[10px] sm:text-xs date-p">
           <%= post.published_at.strftime("%d/%m/%Y") if post.published_at %>
         </p>
-        <div class="bg-white px-2 py-1 rounded w-fit font-mono text-[10px] category-tag">
+        <div class="bg-white px-2 py-1 rounded w-fit font-mono text-[8px] sm:text-[10px] category-tag">
           <%= t("articles.#{post.slug}.category", default: post.category.capitalize) %>
         </div>
       </div>
-      <h2 class="font-mono text-lg">
+      <h2 class="font-mono text-sm sm:text-lg">
         <%= t("articles.#{post.slug}.title", default: post.title) %>
       </h2>
       <p class="text-xs line-clamp-4">
         <%= t("articles.#{post.slug}.description", default: post.description) %>
       </p>
-      <h2 class="mt-10 text-sm">
+      <h2 class="mt-4 sm:mt-10 text-sm">
         <%= render "shared/arrowbutton", text: "Leer el articulo completo", path: post_path(post.slug), show_icon: true, extra_classes: "bg-transparent font-sans hover:underline" %>
       </h2>
     </div>

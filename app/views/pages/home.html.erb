@@ -5,7 +5,7 @@
     <%= render partial: "pages/home/herotext" %>
     <!-- Boton Hero -->
   </div>
-  <div data-home-target="fade" class="flex flex-row justify-center items-center gap-4 opacity-0 mt-[50px] transition-all translate-y-6 duration-700">
+  <div data-home-target="fade" class="flex flex-row justify-center items-center gap-4 opacity-0 mt-[100px] transition-all translate-y-6 duration-700">
     <%= render partial: "shared/button", locals: {submit_text: t('home.hero_button'), path: posts_path,method: :get,confirm: false} %>
   </div>
 </div>
