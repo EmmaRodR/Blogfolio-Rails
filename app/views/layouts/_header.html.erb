@@ -5,7 +5,7 @@
     <label for="menu-toggle" class="sm:hidden top-2 left-2 z-40 text-lg pointer">☰</label>
     <!-- Botón hamburguesa -->
     <!-- Menú -->
-    <ul class="top-0 left-0 z-0 peer-checked:z-30 absolute sm:relative flex sm:flex sm:flex-row flex-col justify-start items-start gap-6 sm:gap-4 sm:bg-transparent sm:p-0 px-4 py-[124px] w-full h-screen sm:h-auto transition-all duration-500 mobile-navbar-background sm:[clip-path:none] [clip-path:circle(0%_at_2rem_2rem)] peer-checked:[clip-path:circle(150%_at_2rem_2rem)]">
+    <ul class="top-0 left-0 z-0 peer-checked:z-30 fixed fixed sm:relative flex sm:flex sm:flex-row flex-col justify-start items-start gap-6 sm:gap-4 sm:bg-transparent sm:p-0 px-4 py-[124px] w-full h-screen sm:h-auto overflow-hidden transition-all duration-500 n mobile-navbar-background sm:[clip-path:none] [clip-path:circle(0%_at_2rem_2rem)] peer-checked:[clip-path:circle(150%_at_2rem_2rem)]">
       <li class="bg-transparent text-[24px] sm:text-sm transition-all duration-500 ease-in-out header-li"><a>
           <%= link_to t('navbar.home') , home_path  %>
         </a>
