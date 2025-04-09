@@ -1,0 +1,4 @@
+<%= link_to '/cv/mycv.pdf', target: "_blank", rel: "noopener", class: "group flex items-center justify-start border border-transparent text-sm py-2 rounded transition-all duration-500 #{extra_classes}" do %>
+  <p class="font-mono font-medium"><%= text %></p>
+  <%= image_tag("rightarrow.svg", class: "arrow group-hover:rotate-90 group:hover:ml-4 ml-2 w-4 h-4 border border-transparent transition-all duration-500 group-hover:translate-x-1") if show_icon %>
+<% end %>

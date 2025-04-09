@@ -16,7 +16,6 @@ Post.create([
   {
     title: "Work: From Finance to QA Professional 🧑‍💻",
     description: "After transitioning from finance to QA, I’ve developed a wide skillset...",
-    published_at: "2025-03-06 00:00:00",
     category: "work",
     content: nil,
     slug: "work-from-finance-to-qa-professional"
@@ -24,7 +23,6 @@ Post.create([
   {
     title: "From Coding to Testing: My Skillset 💻🔧",
     description: "As a QA Tester with nearly 2 years of experience, I’ve mastered several key skills...",
-    published_at: "2025-03-06 00:00:00",
     category: "skills",
     content: nil,
     slug: "from-coding-to-testing-my-skillset"
@@ -32,14 +30,12 @@ Post.create([
   {
     title: "My Educational Journey in Software Testing 🎓✨",
     description: "From Technology and Finance to Labor Relations and Software Testing, I’ve had an interesting journey...",
-    published_at: "2025-03-06 00:00:00",
     category: "education",
     content: nil,
     slug: "my-educational-journey-in-software-testing"
   }
 ])
 
-  
 
   user = User.where(email: "emmanuelrgeek@gmail.com").first_or_initialize
   user.update!(
@@ -47,4 +43,3 @@ Post.create([
     password_confirmation: "password"
   )
 
-  puts "✅ Se han creado el usuario #{user.email} exitosamente."
