@@ -21,7 +21,7 @@
   </head>
   <body data-controller="theme" class="bg-fixed text-white">
     <%= render partial: "layouts/flashmessages"%>
-    <main class="flex flex-col justify-between items-center h-full">
+    <main data-controller="keep-alive" class="flex flex-col justify-between items-center h-full">
       <%= render partial: "layouts/header" %>
       <div class="flex justify-center items-center max-w-6xl container">
         <%= yield %>
