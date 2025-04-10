@@ -174,7 +174,7 @@ body.dark hr, body.dark input, body.dark select, body.dark textarea {
 
 /* Títulos */
 body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark h6 {
-  @apply text-cyan-400/80; /* Títulos en color claro */
+  @apply text-cyan-500; /* Títulos en color claro */
 }
 
 body.dark .page-title {
@@ -182,7 +182,7 @@ body.dark .page-title {
 }
 
 body.dark .skill-card {
-  @apply border-cyan-500/30 bg-black/40
+  @apply border-cyan-500/70 bg-black/40
 }
 
 body.dark .contact-form{
@@ -190,7 +190,7 @@ body.dark .contact-form{
 }
 
 body.dark .experience-card {
-  @apply border-cyan-500/30 bg-black/30
+  @apply border-cyan-500/90 bg-black/30
 }
 
 body.dark .border-line {
@@ -211,11 +211,11 @@ body.dark p {
 }
 
 body.dark a {
-  @apply text-cyan-400 hover:text-black
+  @apply text-cyan-400
 }
 
 body.dark span {
-  @apply text-cyan-300
+  @apply text-cyan-400
 }
 
 body.dark .hero-text {

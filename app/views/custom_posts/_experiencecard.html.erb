@@ -24,7 +24,7 @@
           <div class="flex flex-row items-center gap-2">
             <p class="text-cyan-400"> → </p>
             <p class="font-sans text-xs">
-              <%= responsibility.present? ? responsibility.humanize : "Responsibility not specified" %>
+              <%= responsibility.present? ? responsibility : "Responsibility not specified" %>
             </p>
           </div>
         <% end %>

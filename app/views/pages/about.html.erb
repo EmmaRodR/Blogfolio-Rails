@@ -1,28 +1,28 @@
 <div data-controller="home" class="flex sm:flex-row flex-col justify-evenly items-center gap-8 sm:gap-12 mb-10 mb-8 px-10 sm:px-0 py-8">
   <div class="flex flex-col justify-start items-start gap-4 w-full sm:w-1/2">
     <h2 data-home-target="fade"
-        class="opacity-0 font-mono font-bold text-lg sm:text-3xl text-start tracking-wide scale-95 transition-all duration-700 transform">
+        class="flex justify-center items-center opacity-0 mb-6 font-mono font-bold text-xl sm:text-3xl scale-95 transition-all duration-700 transform">
       Acerca de mí
     </h2>
     <div data-home-target="fade"
        class="sm:hidden flex justify-center opacity-0 sm:mt-0 mb-2 w-full sm:w-1/4 transition-all translate-y-6 duration-700">
       <%= image_tag "avatarprofile.jpg", alt: "Foto de perfil", class: "w-4/5 sm:w-[300px] h-auto rounded-full sm:rounded shadow-xl object-cover" %>
     </div>
-    <p data-home-target="fade"
-       class="opacity-0 mb-4 sm:mb-6 sm:text-md text-sm leading-relaxed transition-all translate-y-6 duration-700 transform">
-      Soy un <span class="">QA & Software Developer</span> apasionado por la calidad del software y siempre en busca de nuevas tecnologías para explorar.  
-      Me especializo en <span class="">testing manual y automatizado</span>, además de contar con experiencia en desarrollo backend y frontend.
-    </p>
-    <p data-home-target="fade"
-       class="opacity-0 mb-4 sm:mb-6 sm:text-md text-sm leading-relaxed transition-all translate-y-6 duration-700 transform">
-      Más allá del mundo IT, disfruto del <span class="">cine y las series</span>, siempre en busca de historias que me sorprendan.  
-      Soy fan de los thrillers, las series de misterio y el anime.
-    </p>
-    <p data-home-target="fade"
-       class="opacity-0 mb-4 sm:mb-6 sm:text-md text-sm leading-relaxed transition-all translate-y-6 duration-700 transform">
-      También me gusta mantenerme activo practicando diversos deportes, aunque tengo una especial afinidad por las  
-      <span class="">artes marciales</span>, que me ayudan a mantener el enfoque y la disciplina.
-    </p>
+    <div class="flex flex-col space-y-4 mt-10 sm:mt-2 mb-4 w-full text-sm sm:text-base leading-relaxed">
+      <p>
+        Desde chico tuve una fuerte curiosidad por la <span class="font-semibold">tecnología</span> y los <span class="font-semibold">videojuegos</span>,  
+        lo que me llevó con los años a interesarme más profundamente por el mundo del desarrollo y la calidad del software.
+      </p>
+      <p>
+        Fuera del entorno técnico, disfruto mucho del <span class="font-semibold">cine</span> y las <span class="font-semibold">series</span>,  
+        especialmente los <span class="font-semibold">thrillers</span>, los <span class="font-semibold">dramas</span> y el <span class="font-semibold">anime</span>.  
+        Me encanta sumergirme en historias con giros inesperados y personajes bien construidos.
+      </p>
+      <p>
+        También disfruto mantenerme activo: me gusta moverme, practicar <span class="font-semibold">deportes</span> y entrenar regularmente.  
+        Tengo una afinidad especial por las <span class="font-semibold">artes marciales</span>, que me aportan equilibrio, disciplina y energía.
+      </p>
+    </div>
     <div data-home-target="fade"
          class="flex sm:flex-row flex-col justify-start items-center sm:items-center gap-4 sm:gap-8 opacity-0 mt-4 sm:mt-6 w-full transition-all translate-y-6 duration-700 transform">
       <%= render "shared/download_button", text: "Descargar CV", show_icon: true, extra_classes: "arrowbutton duration-500 px-4 py-2 transition-all text-xs" %>
@@ -33,7 +33,7 @@
     </div>
   </div>
   <div data-home-target="fade"
-       class="hidden sm:flex justify-center opacity-0 mt-8 sm:mt-0 w-full sm:w-1/4 transition-all translate-y-6 duration-700">
-    <%= image_tag "avatarprofile.jpg", alt: "Foto de perfil", class: "w-4/5 sm:w-[400px] h-auto rounded-full sm:rounded shadow-xl object-cover" %>
+       class="hidden sm:flex justify-center opacity-0 mt-8 sm:mt-0 mb-4 w-full sm:w-1/4 transition-all translate-y-6 duration-700">
+    <%= image_tag "avatarprofile.jpg", alt: "Foto de perfil", class: "w-5/6 sm:w-[400px] h-auto rounded-full sm:rounded shadow-xl object-cover" %>
   </div>
 </div>

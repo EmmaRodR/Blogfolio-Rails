@@ -3,13 +3,13 @@
     <%= t('articles.work-from-finance-to-qa-professional.title') %> </h2>
   <div data-work-target="fade" class="flex flex-col gap-8 opacity-0 max-w-3xl h-full text-base text-left leading-relaxed transition-all translate-y-6 duration-700">
     <%= render partial: "custom_posts/worktext"%>
-    <h2 data-work-target="fade" class="mt-10 mb-8 font-mono text-3xl text-center">
-      Donde he trabajado</h2>
+    <h2 data-work-target="fade" class="mt-[80px] mb-[80px] font-mono text-3xl text-center">
+      Los lugares donde he aprendido:</h2>
     <div class="justify-items-center gap-10 grid grid-cols-1 md:xl:grid-cols-1 xl:grid-cols-1">
       <%= render partial: "custom_posts/experiencecard", locals: { experiences: @experiences}%>
     </div>
   </div>
-  <div class="flex flex-col justify-center items-center mb-[100px]">
+  <div class="flex flex-col justify-center items-center mb-10">
     <%= render partial: "posts/return" %>
   </div>
 </div>

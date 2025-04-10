@@ -1,4 +1,4 @@
 <%= link_to "mailto:emmanuelrgeek@gmail.com?subject=Consulta&body=Hola,%20quisiera%20comunicarme contigo para...", class: "group flex items-center justify-start border border-transparent text-sm px-[12px] py-[8px] rounded transition-all duration-500 #{extra_classes}" do %>
-  <span><%= text %></span>
+  <p class="text-white"><%= text %></p>
   <%= image_tag("rightarrow.svg", class: "arrow group:hover:ml-4 ml-2 w-4 h-4 invert border border-transparent transition-all duration-500 group-hover:translate-x-1") if show_icon %>
 <% end %>
