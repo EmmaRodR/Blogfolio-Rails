@@ -16,9 +16,7 @@
       <p class="mt-2 h-auto text-xs line-clamp-4">
         <%= t("articles.#{post.slug}.description", default: post.description) %>
       </p>
-      <h2 class="mt-4 sm:mt-10 text-sm">
-        <%= render "shared/arrowbutton", text: "Leer el articulo completo", path: post_path(post.slug), show_icon: true, extra_classes: "bg-transparent font-sans hover:underline" %>
-      </h2>
+      <%= render "shared/arrowbutton", text: "Leer el articulo completo", path: post_path(post.slug), show_icon: true, extra_classes: "group:hover:rotate-90" %>
     </div>
   <% end %>
 </div>

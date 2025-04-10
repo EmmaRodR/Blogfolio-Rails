@@ -190,7 +190,7 @@ body.dark .contact-form{
 }
 
 body.dark .experience-card {
-  @apply border-cyan-500/90 bg-black/30
+  @apply border-cyan-500/80 bg-black/30
 }
 
 body.dark .border-line {
@@ -202,12 +202,12 @@ body.dark .arrow {
 }
 
 body.dark .category-tag {
-  @apply border border-transparent bg-slate-900 
+  @apply border border-transparent bg-slate-900 text-gray-300
 }
 
 /* Párrafos */
 body.dark p {
-  @apply text-gray-300 leading-relaxed; /* Texto más suave en modo oscuro */
+  @apply text-gray-300/80 leading-relaxed;
 }
 
 body.dark a {
@@ -215,7 +215,7 @@ body.dark a {
 }
 
 body.dark span {
-  @apply text-cyan-400
+  @apply text-cyan-400/90
 }
 
 body.dark .hero-text {
@@ -249,7 +249,7 @@ body.dark .toogle-background {
 }
 
 body.dark .post-card {
-  @apply border-cyan-500/30 bg-black/50
+  @apply border-cyan-500 bg-black/50
 }
 
 /* Enlaces */

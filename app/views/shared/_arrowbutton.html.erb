@@ -1,4 +1,4 @@
 <%= link_to path, class: "group flex items-center justify-start border border-transparent text-sm py-2 rounded transition-all duration-500 #{extra_classes}" do %>
-  <p class="font-mono font-medium"><%= text %></p>
-  <%= image_tag("rightarrow.svg", class: "arrow group:hover:ml-4 ml-2 w-4 h-4 border border-transparent transition-all duration-500 group-hover:translate-x-1") if show_icon %>
+  <span class="font-mono font-medium text-sm"><%= text %></span>
+  <%= image_tag("rightarrow.svg", class: "arrow group-hover:rotate-180 group:hover:ml-4 ml-2 w-4 h-4 border border-transparent group-hover:transition-all group-hover:duration-500") if show_icon %>
 <% end %>
