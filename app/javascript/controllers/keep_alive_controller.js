@@ -13,7 +13,7 @@ export default class extends Controller {
       this.keepSessionAlive(); 
       console.log('KeepAlive ejecutado');
 
-    }, 5 * 60 * 1000);
+    }, 3 * 60 * 1000);
   }
 
   keepSessionAlive() {
