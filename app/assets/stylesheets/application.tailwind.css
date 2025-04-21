@@ -207,12 +207,13 @@ body.dark .category-tag {
 
 /* Párrafos */
 body.dark p {
-  @apply text-gray-300/80 leading-relaxed;
+  @apply leading-relaxed text-gray-300/80;
 }
 
 body.dark a {
   @apply text-cyan-400
 }
+
 
 body.dark span {
   @apply text-cyan-400/90
@@ -254,7 +255,7 @@ body.dark .post-card {
 
 /* Enlaces */
 body.dark .header-li {
-  @apply hover:bg-cyan-400 px-1 hover:font-bold text-cyan-100 hover:text-slate-900;
+  @apply hover:bg-cyan-700 px-1 hover:font-bold hover:text-white/90
 }
 
 body.dark .arrowbutton {
