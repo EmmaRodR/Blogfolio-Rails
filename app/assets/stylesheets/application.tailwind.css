@@ -254,7 +254,7 @@ body.dark .post-card {
 
 /* Enlaces */
 body.dark .header-li {
-  @apply hover:bg-cyan-400 px-1 hover:font-bold text-cyan-100;
+  @apply hover:bg-cyan-400 px-1 hover:font-bold text-cyan-100 hover:text-slate-900;
 }
 
 body.dark .arrowbutton {
