@@ -178,7 +178,7 @@ body.dark h1, body.dark h2, body.dark h3, body.dark h4, body.dark h5, body.dark 
 }
 
 body.dark .page-title {
-  @apply text-gray-200
+  @apply text-gray-300
 }
 
 body.dark .skill-card {
@@ -246,7 +246,7 @@ body.dark .hero-button {
 }
 
 body.dark .toogle-background {
-  @apply bg-black/20 border border-transparent hover:border-cyan-500
+  @apply bg-slate-950/80 border border-transparent hover:border-cyan-500
 }
 
 body.dark .post-card {
